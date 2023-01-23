@@ -2,11 +2,11 @@
   "name": "firebase-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "dev": "node ./src/index.js"
+    "dev": "node ./src/index.mjs"
   },
   "author": "",
   "license": "ISC",
