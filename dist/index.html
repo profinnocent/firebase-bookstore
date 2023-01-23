@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase 9</title>
+    <style>
+        div{
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 15px 10px;
+            border-radius: 6px;
+        }
+        table{
+            width: 100%;
+        }
+        tr{
+            min-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        th,td{
+            text-align: start;
+            width: 30%;
+        }
+        th:nth-child(1),td:nth-child(1){
+            width: 10%;
+        }
+        th:nth-child(2),td:nth-child(2){
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Firebase 9 Tutorial</h1>
+
+    <div>
+        <form class="signupform" action="#" method="post">
+            <h3>SIGN UP</h3>
+            <input type="email" name="email" placeholder="Enter Email" required>
+            <input type="password" name="password" placeholder="Enter Password" required>
+            <input type="submit" value="SIGN UP">
+        </form>
+    </div>
+
+    <div>
+        <form class="loginform" action="#" method="post">
+            <h3>LOGIN</h3>
+            <input type="email" name="email" placeholder="Enter Email" required>
+            <input type="password" name="password" placeholder="Enter Password" required>
+            <input type="submit" value="LOGIN">
+        </form>
+    </div>
+
+    <div>
+        <h3>LogOut Button</h3>
+        <button class="logout">Logout</button>
+    </div>
+
+    <div>
+        <h3>Unsubscribe from subscriptions</h3>
+        <button class="unsubbtn">Unsubscribe</button>
+    </div>
+
+<div>
+    <form class="addform" action="#" method="post">
+        <h3>ADD BOOK</h3>
+        <input type="text" name="title" id="title" placeholder="Enter Book title" required>
+        <input type="text" name="author" id="author" placeholder="Enter Book Author" required>
+        <input type="submit" value="ADD BOOK">
+    </form>
+</div>
+    <div>
+        <form class="updateform" action="#" method="post">
+            <h3>UPDATE BOOK</h3>
+            <input type="text" name="bid" placeholder="Enter Book ID">
+            <input type="text" name="title" id="title" placeholder="Enter Book title">
+            <input type="text" name="author" id="author"placeholder="Enter Book Author">
+            <input type="submit" value="UPDATE BOOK">
+        </form>
+    </div>
+<div>
+    <form class="deleteform" action="#" method="post">
+        <h3>DELETE BOOK</h3>
+        <input type="text" name="bid" placeholder="Enter Book ID">
+        <input type="submit" value="REMOVE BOOK" required>
+    </form>
+</div>
+
+    <div>
+        <form class="getabookform" action="#" method="post">
+            <h3>GET A BOOK</h3>
+            <input type="text" name="bid" placeholder="Enter Book ID">
+            <input type="submit" value="GET BOOK" required>
+        </form>
+    </div>
+
+    <div>
+       <table>
+        <h3>BOOK LIST</h3>
+        <hr>
+        <tr>
+            <th>ID</th>
+            <th>TITLE</th>
+            <th>AUTHOR</th>
+            <th>ACTION</th>
+        </tr>
+
+        <!-- <tr>
+            <td>1</td>
+            <td>Fear Lies</td>
+            <td>Bade Ogunlade</td>
+            <td>
+                <button><a href="#"></a> Edit</button>
+                <button>Delete</button>
+            </td>
+        </tr> -->
+       </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
